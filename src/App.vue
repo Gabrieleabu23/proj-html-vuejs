@@ -5,7 +5,7 @@ import AppMain from './components/AppMain.vue'
 </script>
 
 <template>
-  
+  <AppHeader/>
 </template>
 
 
