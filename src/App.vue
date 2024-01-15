@@ -15,8 +15,6 @@ export default{
 </script>
 
 <template>
-
-    <AppFooter/>
   
 </template>
 
