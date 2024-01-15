@@ -7,7 +7,7 @@ export default {
 <template>
 
     <div class="container-fluid">
-        <div class="container pt-4">
+        <div class="container header_width pt-4">
             <div class="row">
                 <div class="col-md-2">
                     <ul>
@@ -47,14 +47,16 @@ export default {
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h3 class="pb-2">Quick Links</h3>
-                    <div class="mb-2">
-                        <input type="email" id="email" class="email-input p-2 rounded w-100" placeholder="Enter your email address" required>
+                    <div class="d-flex flex-column">
+                        <h3 class="pb-2">Quick Links</h3>
+                        <div class="mb-2">
+                            <input type="email" id="email" class="email-input p-2 rounded w-100" placeholder="Enter your email address" required>
+                        </div>
+                        
+                                           <div>
+                        <button type="submit" class="subscribe-button p-2 rounded w-100 font-weight-bold">SUBSCRIBE</button>
+                                           </div>
                     </div>
-
-                   <div>
-                    <button type="submit" class="subscribe-button p-2 rounded w-100 font-weight-bold">SUBSCRIBE</button>
-                   </div>
 
                 </div>
             </div>
