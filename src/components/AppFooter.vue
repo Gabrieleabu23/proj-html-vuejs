@@ -7,21 +7,26 @@ export default {
 <template>
 
     <div class="container-fluid">
-        <div class="container header_width pt-4">
+
+
+        <div class="d-flex box-triangle">
+            <div class="triangolo"></div>
+        </div>
+
+        <div class="container header_width mt-5">
             <div class="row">
                 <div class="col-md-2">
                     <ul>
-                        <h3>Get Started</h3>
+                        <h5 class="text-uppercase">Get Started</h5>
                         <li>Resources</li>
                         <li>Tutorials</li>
                         <li>Examples</li>
                         <li>Docs</li>
-                        <p>lorem</p>
                     </ul>
                 </div>
                 <div class="col-md-2">
                     <ul>
-                        <h3>About</h3>
+                        <h5 class="text-uppercase">About</h5>
                         <li>Stories</li>
                         <li>Community</li>
                         <li>Blog</li>
@@ -30,7 +35,7 @@ export default {
                 </div>
                 <div class="col-md-2">
                     <ul>
-                        <h3>Features</h3>
+                        <h5 class="text-uppercase">Features</h5>
                         <li>Overview</li>
                         <li>Design</li>
                         <li>Code</li>
@@ -39,7 +44,7 @@ export default {
                 </div>
                 <div class="col-md-2">
                     <ul>
-                        <h3>Quick Links</h3>
+                        <h5 class="text-uppercase">Quick Links</h5>
                         <li>Stories</li>
                         <li>Community</li>
                         <li>Blog</li>
@@ -48,14 +53,15 @@ export default {
                 </div>
                 <div class="col-md-4">
                     <div class="d-flex flex-column">
-                        <h3 class="pb-2">Quick Links</h3>
+                        
+                        <h5 class="pb-2 text-uppercase">SUBSCRIBE TO NEWSLETTER</h5>
                         <div class="mb-2">
                             <input type="email" id="email" class="email-input p-2 rounded w-100" placeholder="Enter your email address" required>
                         </div>
                         
-                                           <div>
+                    <div>
                         <button type="submit" class="subscribe-button p-2 rounded w-100 font-weight-bold">SUBSCRIBE</button>
-                                           </div>
+                    </div>
                     </div>
 
                 </div>
@@ -63,12 +69,12 @@ export default {
 
             <hr class="mt-4 w-100">
 
-            <div class="row justify-content-between ">
-                <div class="col-md-2">
-                 sus
+            <div class="row justify-content-between align-items-center ">
+                <div class="col-md-2 my-3">
+                 <img src="../assets/anime/assets/anime-whitelogo-300x89.png" alt="">
                 </div>
-                <div class="col-md-4">
-                  sus
+                <div class="col-md-4 my-3">
+                  <p>© Anime Tech, Theme by HasnainDEV</p>
                 </div>
             </div>
             
@@ -88,12 +94,20 @@ export default {
 .container-fluid{
     background-color: $red_header_footer;
     color: white;
+    border-top:4px solid $black_footer_hr_triangle ;
+    position: relative;
+    
+    
     ul{
         list-style-type: none;
     }
 
     .email-input{
        border: none;
+    }
+
+    li:hover{
+        color: $subscribe_button;
     }
 
     .subscribe-button{
@@ -108,9 +122,28 @@ export default {
     }
 
     hr{
-        color: black;
-        background-color: black;
+        height: 1px;
+        background-color: rgb(255, 255, 255); 
+        opacity: 1; 
     }
+    img{
+        height: 65px;
+        width: 230px;
+    }
+}
+
+.box-triangle{
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.triangolo {
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent; 
+    border-right: 15px solid transparent; 
+    border-top: 15px solid $black_footer_hr_triangle; 
 }
 
 
