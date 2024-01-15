@@ -86,7 +86,4 @@ export default {
         }
     }
 }
-.header_width{
-    width: 70%;
-}
 </style>
