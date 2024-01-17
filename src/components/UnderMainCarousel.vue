@@ -1,6 +1,13 @@
 <script>
+
+import { store } from '../store'
 export default {
-  name: 'UnderMainCarousel'
+  name: 'UnderMainCarousel',
+  data(){
+  return{
+  store
+  }
+  }
 }
 </script>
 
@@ -12,7 +19,7 @@ export default {
                     <div class="row height-400" >
                         <div class="col-md-12 height-calc-up">
                             <div class="card  shadow h-100 text-bg-dark">
-                                <img src="../assets/anime/assets/anime-fashion.webp" class="card-img h-100" alt="...">
+                                <img :src="store.animeList[11].path" class="card-img h-100" alt="...">
                                 <div class="card-img-overlay">
                                     <h2>sus</h2>
                                 </div>
