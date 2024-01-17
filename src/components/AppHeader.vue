@@ -1,8 +1,6 @@
 <script>
-
 export default {
   name: 'AppHeader'
-  
 }
 </script>
 
@@ -47,21 +45,63 @@ export default {
       </div>
     </div>
   </section>
-  
-  <div class="d-flex gap-2">
+  <!--ROUTER VUE  -->
+  <!-- <div class="d-flex gap-2">
     <router-link :to="{ name: 'home' }" class="">home</router-link>
     <router-link :to="{ name: 'about' }">about</router-link>
     <router-link :to="{ name: 'contact' }">contact</router-link>
-  </div>
-    
- 
+  </div> -->
+  <section>
+    <div class="container header_width p-4">
+      <div class="row align-items-center justify-content-between h-100">
+        <div class="col-3">
+          <div class="container_logo">
+            <img src="../assets/anime/assets/anime-logo.webp" alt="" />
+          </div>
+        </div>
+        <div class="col-auto me-4">
+          <img
+            src="../assets/anime/assets/header-banner.webp"
+            class="rounded"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <hr class="mt-2 mb-4">
+  </section>
+  <section>
+    <div class="container header_width my-3">
+      <div class="row align-items-center justify-content-between h-100">
+        <div class="col-3">
+          <div class="d-flex align-items-center h-100"><i class="fa-solid fa-bars fs-2" ></i></div>
+        </div>
+        <div class="col-auto">
+          <ul class="d-flex  align-items-center h-100 justify-content-center gap-4">
+            <li><i class="fa-solid fa-house me-2"></i>
+              <router-link :to="{ name: 'home' }" class="fw-bold text-decoration-none" :class="{ 'active-link': $route.path === '/' }">HOME</router-link>
+            </li>
+            <li><i class="fa-solid fa-user me-2"></i>
+              <router-link :to="{ name: 'about' }" class="fw-bold text-decoration-none" :class="{ 'active-link': $route.path === '/about' }">ABOUT US</router-link>
+            </li>
+            <li><i class="fa-solid fa-envelope me-2"></i>
+              <router-link :to="{ name: 'contact' }" class="fw-bold text-decoration-none" :class="{ 'active-link': $route.path === '/contact' }">CONTACT US</router-link>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <div class="d-flex justify-content-end align-items-center h-100"><i class="fa-solid fa-magnifying-glass fs-2"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/general.scss' as *;
 @use '../styles/partials/variables' as *;
 
-// HEADER
+// HEADER TOP
 
 .bg_red_header {
   background-color: $red_header_footer;
@@ -103,6 +143,28 @@ export default {
     i {
       color: #f8e8ea;
     }
+  }
+}
+
+// HEADER DOWN
+
+.active-link{
+  color: $red_header_footer;
+}
+hr{
+  border-color: $border_grey_header;
+}
+ul{
+    li a{
+      color: black;
+      &:hover{
+        color:$red_header_footer;
+      }
+    }
+}
+.col-3{
+  i{
+    margin-right: 40px;
   }
 }
 </style>

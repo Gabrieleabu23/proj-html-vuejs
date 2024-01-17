@@ -5,6 +5,19 @@
     margin: 0;
     font-family: 'Nunito Sans Variable', sans-serif;
 }
+ul{
+    list-style-type: none;
+}
 .header_width{
     width: 80%;
+}
+
+.container_height_100{
+    height: 100px;
+}
+.container_logo{
+    height: 70px;
+    img{
+        height: 100%;
+    }
 }
