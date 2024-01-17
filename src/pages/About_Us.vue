@@ -1,7 +1,9 @@
-<script >
-export default {
-    name: 'About_Us',
+<script>
+export default{
+    name:'AboutUS'
 }
+
+
 </script>
 
 <template>
@@ -55,8 +57,8 @@ export default {
             <p class="w-50 m-auto ">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
             <div class="row mt-3">
-                <div v-for="index in 4" :key="index" class="col-md-3">
-                    <img src="https://demo.hasnaindev.com/animetech/wp-content/uploads/2022/12/team-member.webp" alt="">
+                <div v-for="index in 4" :key="index" class="col-md-6 col-lg-3">
+                    <img class="circle-img" src="https://demo.hasnaindev.com/animetech/wp-content/uploads/2022/12/team-member.webp" alt="">
 
                     <h5 class="text-uppercase mt-4">David Anderson</h5>
                     <div class="text-danger">Founder & CEO</div>
@@ -67,7 +69,7 @@ export default {
             <h2 class="text-uppercase my-3">faq</h2>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mt-3">
 
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
@@ -110,7 +112,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mt-3">
 
                     <div class="accordion" id="accordionExample2">
                         <div class="accordion-item">
@@ -125,7 +127,7 @@ export default {
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-item2">
+                        <div class="accordion-item">
                           <h2 class="accordion-header" id="headingTwo2">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
                                 A frequently asked question surrounding your service
@@ -177,15 +179,14 @@ export default {
     width: 100%;
 }
 
-.col-md-3 img{
+.circle-img{
     width: 105%;
     border-radius: 100%;
     position: relative;
     &:hover {
         opacity: 0.5;
         
-    }
-    
+    } 
 }
 
 
