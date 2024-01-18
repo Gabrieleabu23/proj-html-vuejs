@@ -12,24 +12,23 @@ export default {
 </script>
 
 <template>
-    <div class="container-fluid">
-        <div class="container header_width">
+    <div class="container header_width ">
             <div class="row mb-5">
                 <div class="col-md-3 ">
                     <div class="row height-400" >
                         <div class="col-md-12 height-calc-up">
                             <div class="card  shadow h-100 text-bg-dark">
-                                <img :src="store.animeList[11].path" class="card-img h-100" alt="...">
+                                <img :src="store.animeList[0].path" class="card-img h-100" alt="...">
                                 <div class="card-img-overlay">
-                                    <h2>sus</h2>
+                                    <h2 class="text-center">sus</h2>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12 height-calc-down">
                             <div class="card text-bg-dark h-100">
-                                <img src="../assets/anime/assets/travel-alone.webp" class="card-img h-100" alt="...">
+                                <img :src="store.animeList[7].path" class="card-img h-100" alt="...">
                                 <div class="card-img-overlay">
-                                    <h2>sus</h2>
+                                    <h2 class="text-center">sus</h2>
                                 </div>
                             </div>
                         </div>
@@ -37,9 +36,9 @@ export default {
                 </div>
                 <div class="col-md-6">
                     <div class="card height-400" style="overflow: hidden;">
-                        <img src="../assets/anime/assets/best-places.webp" class="w-100 h-100" alt="Best Places">
+                        <img :src="store.animeList[9].path" class="w-100 h-100" alt="Best Places">
                         <div class="card-img-overlay">
-                            <h2>sus</h2>
+                            <h2 class="text-center">sus</h2>
                         </div>
                     </div>
                 </div>
@@ -47,18 +46,21 @@ export default {
                     <div class="row height-400">
                         <div class="col-md-12 height-calc-up">
                             <div class="card h-100 text-bg-dark">
-                                <img src="../assets/anime/music-love.webp" class="card-img h-100 " alt="...">
+                                <img :src="store.animeList[10].path" class="card-img h-100 " alt="...">
                                 <div class="card-img-overlay">
-                                    <h2>sus</h2>
+                                    <h2 class="text-center">sus</h2>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-12 height-calc-down">
                             <div class="card h-100 text-bg-dark">
-                                <img src="../assets/anime/assets/visit-france.webp" class="card-img h-100" alt="...">
+                                <img :src="store.animeList[6].path" class="card-img h-100" alt="...">
                                 <div class="card-img-overlay">
 
-                                    <h2>sus</h2>
+                                    <h2 class="text-center"><span v-for="el in store.animeList[6].category">
+                                    {{ el
+                                     }}
+                                    </span></h2>
                                   
                                 </div>
                             </div>
@@ -80,7 +82,6 @@ export default {
                 </div>
 
             </div>
-
             <div class="d-none d-md-block">
                 <div class="row height-400 ">
                     <div class="col-md-8 h-100">
@@ -157,9 +158,6 @@ export default {
                     </div>
                 </div>
             </div>
-           
-
-        </div>
     </div>
 
 

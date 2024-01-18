@@ -73,23 +73,32 @@ export default {
   <section>
     <div class="container header_width my-3">
       <div class="row align-items-center justify-content-between h-100">
-        <div class="col-3">
+        <div class="col-auto">
           <div class="d-flex align-items-center h-100"><i class="fa-solid fa-bars fs-2" ></i></div>
         </div>
         <div class="col-auto">
-          <ul class="d-flex  align-items-center h-100 justify-content-center gap-4">
+          <ul class="d-flex  align-items-center h-100 justify-content-center gap-3">
             <li><i class="fa-solid fa-house me-2"></i>
               <router-link :to="{ name: 'home' }" class="fw-bold text-decoration-none" :class="{ 'active-link': $route.path === '/' }">HOME</router-link>
             </li>
             <li><i class="fa-solid fa-user me-2"></i>
               <router-link :to="{ name: 'about' }" class="fw-bold text-decoration-none" :class="{ 'active-link': $route.path === '/about' }">ABOUT US</router-link>
             </li>
+            <li role="button"><i class="fa-solid fa-suitcase me-2"></i>
+              <span class="fw-bold text-decoration-none">LIFESTYLE</span>
+            </li>
+            <li role="button"><i class="fa-solid fa-book-open-reader me-2"></i>
+              <span class="fw-bold text-decoration-none">STORIES</span>
+            </li>
+            <li role="button"><i class="fa-solid fa-suitcase me-2"></i>
+              <span class="fw-bold text-decoration-none">PAGES</span>
+            </li>
             <li><i class="fa-solid fa-envelope me-2"></i>
               <router-link :to="{ name: 'contact' }" class="fw-bold text-decoration-none" :class="{ 'active-link': $route.path === '/contact' }">CONTACT US</router-link>
             </li>
           </ul>
         </div>
-        <div class="col-3">
+        <div class="col-1">
           <div class="d-flex justify-content-end align-items-center h-100"><i class="fa-solid fa-magnifying-glass fs-2"></i></div>
         </div>
       </div>
