@@ -14,7 +14,7 @@ export default {
         </div>
 
         <div class="container header_width mt-5">
-            <div class="row pb-4 text-center">
+            <div class="row pb-4 ">
                 <div class="mb-4 col-lg-2 col-md-4 col-sm-6">
                     <ul>
                         <h5 class="text-uppercase">Get Started</h5>
@@ -51,7 +51,7 @@ export default {
                         <li>Brand Assets</li>
                     </ul>
                 </div>
-                <div class="my-4 col-lg-4 col-md-8 col-sm-12">
+                <div class="col-lg-4 col-md-8 col-sm-12">
                     <div class="d-flex flex-column">
                         
                         <h5 class="pb-2 text-uppercase">SUBSCRIBE TO NEWSLETTER</h5>

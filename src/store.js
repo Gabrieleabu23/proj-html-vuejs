@@ -4,7 +4,7 @@ export const store= reactive({
         {
             id:1,
             path:'/public/anime/assets/rice-ball.webp',
-            category:'Food',
+            category:['Food'],
             title:'Hygenic receipe to prepare rice',
             date:'December 26, 2022',
             user:'demo'
@@ -12,7 +12,7 @@ export const store= reactive({
         {   
             id:2,
             path:'/public/anime/meal-time-150x150.webp',
-            category:'Food',
+            category:['Food'],
             title:'The best time to have a meal',
             date:'December 26, 2022',
             user:'demo'
@@ -20,7 +20,7 @@ export const store= reactive({
         {   
             id:3,
             path:'/public/anime/assets/healthy-foods.webp',
-            category:'Food',
+            category:['Food'],
             title:'The best healthy foods',
             date:'December 26, 2022',
             user:'demo'
@@ -28,7 +28,7 @@ export const store= reactive({
         {   
             id:4,
             path:'/public/anime/assets/winter.webp',
-            category:'Fashion',
+            category:['Fashion'],
             title:'The best winter outfits',
             date:'December 26, 2022',
             user:'demo'
@@ -36,7 +36,7 @@ export const store= reactive({
         {   
             id:5,
             path:'/public/anime/assets/photographers-mistakes.webp',
-            category:'Fashion',
+            category:['Fashion'],
             title:'Beginner photographer’s mistakes',
             date:'December 26, 2022',
             user:'demo'
@@ -60,7 +60,7 @@ export const store= reactive({
         {   
             id:8,
             path:'/public/anime/assets/travel-alone.webp',
-            category:['Travel','Stories'],
+            category:['Stories','Travel'],
             title:'Traveling alone is awesome',
             date:'December 26, 2022',
             user:'demo'

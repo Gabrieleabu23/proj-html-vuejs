@@ -1,11 +1,13 @@
 <script >
 import UnderMainCarousel from './UnderMainCarousel.vue';
 import CardBottom from './CardBottom.vue';
+import Lifestyle from './Lifestyle.vue'
 export default {
     name: 'AppMain',
     components:{
         UnderMainCarousel,
-        CardBottom
+        CardBottom,
+        Lifestyle,
     }
 }
 </script>
@@ -13,6 +15,8 @@ export default {
 <template>
 
     <UnderMainCarousel/>
+
+    <Lifestyle/>
 
     <CardBottom/>
 
