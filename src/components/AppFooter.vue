@@ -14,8 +14,8 @@ export default {
         </div>
 
         <div class="container header_width mt-5">
-            <div class="row">
-                <div class="col-md-2">
+            <div class="row pb-4 text-center">
+                <div class="mb-4 col-lg-2 col-md-4 col-sm-6">
                     <ul>
                         <h5 class="text-uppercase">Get Started</h5>
                         <li>Resources</li>
@@ -24,7 +24,7 @@ export default {
                         <li>Docs</li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="mb-4 col-lg-2 col-md-4 col-sm-6">
                     <ul>
                         <h5 class="text-uppercase">About</h5>
                         <li>Stories</li>
@@ -33,7 +33,7 @@ export default {
                         <li>Brand Assets</li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="mb-4 col-lg-2 col-md-4 col-sm-6">
                     <ul>
                         <h5 class="text-uppercase">Features</h5>
                         <li>Overview</li>
@@ -42,7 +42,7 @@ export default {
                         <li>Collaborate</li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="mb-4 col-lg-2 col-md-4 col-sm-6">
                     <ul>
                         <h5 class="text-uppercase">Quick Links</h5>
                         <li>Stories</li>
@@ -51,7 +51,7 @@ export default {
                         <li>Brand Assets</li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="my-4 col-lg-4 col-md-8 col-sm-12">
                     <div class="d-flex flex-column">
                         
                         <h5 class="pb-2 text-uppercase">SUBSCRIBE TO NEWSLETTER</h5>
@@ -67,13 +67,13 @@ export default {
                 </div>
             </div>
 
-            <hr class="mt-4 w-100">
+            <hr class="mt-2 w-100">
 
-            <div class="row justify-content-between align-items-center ">
-                <div class="col-md-2 my-3">
+            <div class="row justify-content-between align-items-center text-center ">
+                <div class="col-md-2 col-sm-12 my-3">
                  <img src="../assets/anime/assets/anime-whitelogo-300x89.png" alt="">
                 </div>
-                <div class="col-md-4 my-3">
+                <div class="col-md-4 my-3 col-sm-12">
                   <p>© Anime Tech, Theme by HasnainDEV</p>
                 </div>
             </div>

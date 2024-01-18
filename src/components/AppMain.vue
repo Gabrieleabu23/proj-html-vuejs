@@ -1,9 +1,11 @@
 <script >
 import UnderMainCarousel from './UnderMainCarousel.vue';
+import CardBottom from './CardBottom.vue';
 export default {
     name: 'AppMain',
     components:{
-        UnderMainCarousel
+        UnderMainCarousel,
+        CardBottom
     }
 }
 </script>
@@ -11,6 +13,10 @@ export default {
 <template>
 
     <UnderMainCarousel/>
+
+    <CardBottom/>
+
+
 </template>
 
 <style lang="scss" scoped>
