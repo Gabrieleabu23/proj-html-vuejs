@@ -6,7 +6,13 @@ export default{
     return{
     store
     }
+    },
+    methods: {
+    getNumberOfPosts(category) {
+      return this.store.animeList.filter(item => item.category.includes(category)).length;
     }
+  }
+    
 }
 
 
@@ -23,11 +29,16 @@ export default{
                 <div class="col-lg-2 col-md-4">
                     <div class="card h-100 text-bg-dark text-center">
                         <img :src="store.animeList[11].path" class="card-img h-100" alt="...">
-                        <div class="card-img-overlay">
+                        <div class="card-img-overlay ">
 
-                            <h3 class="text-uppercase">
-                                {{ store.animeList[11].category[0] }}
-                            </h3>
+                            <div class="white-square"></div>
+                            <div class="vertical-center">
+                                <h3 class="text-uppercase">
+                                    {{ store.animeList[11].category[0] }}
+                                </h3>
+                    
+                                <h3 class="post-count text-uppercase">{{ getNumberOfPosts(store.animeList[11].category[0]) }} Posts</h3>
+                            </div>
                           
                         </div>
                     </div>
@@ -36,9 +47,15 @@ export default{
                     <div class="card h-100 text-bg-dark">
                         <img :src="store.animeList[8].path" class="card-img h-100" alt="...">
                         <div class="card-img-overlay">
-                            <h3 class="text-uppercase">
-                                {{ store.animeList[8].category[0] }}
-                            </h3>
+
+                            <div class="white-square"></div>
+                            <div class="vertical-center">
+                                <h3 class="text-uppercase">
+                                    {{ store.animeList[8].category[0] }}
+                                </h3>
+                    
+                                <h3 class="post-count text-uppercase">{{ getNumberOfPosts(store.animeList[8].category[0]) }} Posts</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -46,9 +63,15 @@ export default{
                     <div class="card h-100 text-bg-dark">
                         <img :src="store.animeList[2].path" class="card-img h-100" alt="...">
                         <div class="card-img-overlay">
-                            <h3 class="text-uppercase">
-                                {{ store.animeList[2].category[0] }}
-                            </h3>
+
+                            <div class="white-square"></div>
+                            <div class="vertical-center">
+                                <h3 class="text-uppercase">
+                                    {{ store.animeList[2].category[0] }}
+                                </h3>
+                    
+                                <h3 class="post-count text-uppercase">{{ getNumberOfPosts(store.animeList[2].category[0]) }} Posts</h3>
+                            </div>
                           
                         </div>
                     </div>
@@ -59,9 +82,15 @@ export default{
                         <img :src="store.animeList[6].path" class="card-img h-100" alt="...">
                         <div class="card-img-overlay">
 
-                            <h3 class="text-uppercase">
-                                {{ store.animeList[6].category[0] }}
-                            </h3>
+                            <div class="white-square"></div>
+
+                            <div class="vertical-center">
+                                <h3 class="text-uppercase">
+                                    {{ store.animeList[6].category[0] }}
+                                </h3>
+                    
+                                <h3 class="post-count text-uppercase">{{ getNumberOfPosts(store.animeList[6].category[0]) }} Posts</h3>
+                            </div>
                           
                         </div>
                     </div>
@@ -72,9 +101,15 @@ export default{
                         <img :src="store.animeList[7].path" class="card-img h-100" alt="...">
                         <div class="card-img-overlay">
 
-                            <h3 class="text-uppercase">
-                                {{ store.animeList[7].category[0] }}
-                            </h3>
+                            <div class="white-square"></div>
+
+                            <div class="vertical-center">
+                                <h3 class="text-uppercase">
+                                    {{ store.animeList[7].category[0] }}
+                                </h3>
+                    
+                                <h3 class="post-count text-uppercase">{{ getNumberOfPosts(store.animeList[7].category[0]) }} Posts</h3>
+                            </div>
                           
                         </div>
                     </div>
@@ -85,11 +120,15 @@ export default{
                         <img :src="store.animeList[9].path" class="card-img h-100" alt="...">
                         <div class="card-img-overlay">
 
-                            
+                            <div class="white-square"></div>
 
-                            <h3 class="text-uppercase">
-                                {{ store.animeList[9].category[2] }}
-                            </h3>
+                            <div class="vertical-center">
+                                <h3 class="text-uppercase">
+                                    {{ store.animeList[9].category[2] }}
+                                </h3>
+                    
+                                <h3 class="post-count text-uppercase">{{ getNumberOfPosts(store.animeList[9].category[2]) }} Posts</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,11 +152,10 @@ export default{
     position: relative;
     overflow: hidden;
     border: none;
-   
   }
 
   .col-lg-2, .col-md-4{
-    height: 150px;
+    height: 180px;
   }
 
   
@@ -140,26 +178,54 @@ export default{
     left: 0;
     width: 100%;
     height: 100%;
-     /* Opacità meno intensa */ /* Opacità rossa */
     pointer-events: none;
-    opacity: 1; /* Sposta l'opacità qui */
+    opacity: 1; 
     transition: opacity 0.3s ease-in-out;
-  }
+        
+    }
+  
   
   .card:hover .card-img-overlay {
     opacity: 1;
     background-color: rgba(255, 0, 0, 0.3);
+    .white-square {
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 140px; 
+        height: 140px; 
+        border: 1px solid white;
+    }
   }
   
   .card .card-img-overlay h3 {
     color: white;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1; /* Mantieni l'opacità sempre a 1 */
+    opacity: 1; 
   }
+
+  .post-count {
+    display: none; 
+
+    
+    color: white;
+    font-size: 14px;
+}
+
+
+.card:hover .post-count {
+    display: block;
+}
+
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
   
 
