@@ -3,7 +3,7 @@ export const store= reactive({
     animeList:[
         {
             id:1,
-            path:'/public/anime/assets/rice-ball.webp',
+            path:'/anime/assets/rice-ball.webp',
             category:['Food'],
             title:'Hygenic receipe to prepare rice',
             date:'December 26, 2022',
@@ -11,7 +11,7 @@ export const store= reactive({
         },
         {   
             id:2,
-            path:'/public/anime/meal-time-150x150.webp',
+            path:'https://demo.hasnaindev.com/animetech/wp-content/uploads/2022/12/meal-time.webp',
             category:['Food'],
             title:'The best time to have a meal',
             date:'December 26, 2022',
@@ -19,7 +19,7 @@ export const store= reactive({
         },
         {   
             id:3,
-            path:'/public/anime/assets/healthy-foods.webp',
+            path:'/anime/assets/healthy-foods.webp',
             category:['Food'],
             title:'The best healthy foods',
             date:'December 26, 2022',
@@ -27,75 +27,84 @@ export const store= reactive({
         },
         {   
             id:4,
-            path:'/public/anime/assets/winter.webp',
+            path:'/anime/assets/winter.webp',
             category:['Fashion'],
             title:'The best winter outfits',
             date:'December 26, 2022',
-            user:'demo'
+            user:'demo',
+            featured:true
         },
         {   
             id:5,
-            path:'/public/anime/assets/photographers-mistakes.webp',
+            path:'/anime/assets/photographers-mistakes.webp',
             category:['Fashion'],
             title:'Beginner photographer’s mistakes',
             date:'December 26, 2022',
-            user:'demo'
+            user:'demo',
+            featured:true
         },
         {   
             id:6,
-            path:'/public/anime/ideas-anime.webp',
+            path:'/anime/ideas-anime.webp',
             category:['Culture','Stories'],
             title:'Live Ideas you might be anime',
             date:'December 26, 2022',
-            user:'demo'
+            user:'demo',
+            featured:true
         },
         {   
             id:7,
-            path:'/public/anime/assets/visit-france.webp',
+            path:'/anime/assets/visit-france.webp',
             category:['Lifestyle','Travel'],
             title:'Reasons to visit france',
             date:'December 26, 2022',
-            user:'demo'
+            user:'demo',
+            featured:true
         },
         {   
             id:8,
-            path:'/public/anime/assets/travel-alone.webp',
+            path:'/anime/assets/travel-alone.webp',
             category:['Stories','Travel'],
             title:'Traveling alone is awesome',
             date:'December 26, 2022',
-            user:'demo'
+            user:'demo',
+            featured:true
         },
         {   
             id:9,
-            path:'/public/anime/assets/success-story.webp',
+            path:'/anime/assets/success-story.webp',
             category:['Culture','Stories'],
             title:'The best success stories',
             date:'December 26, 2022',
-            user:'demo'
+            user:'demo',
+            featured:true
         },
         {   
             id:10,
-            path:'/public/anime/assets/best-places.webp',
+            path:'/anime/assets/best-places.webp',
             category:['Lifestyle','Stories','Travel'],
             title:'Places for a road trip',
             date:'December 25, 2022',
-            user:'demo'
+            user:'demo',
+            featured:true
         },
         {   
             id:11,
-            path:'/public/anime/music-love.webp',
+            path:'/anime/music-love.webp',
             category:['Culture','Lifestyle'],
             title:'Music the Love of my life',
             date:'December 25, 2022',
-            user:'demo'
+            user:'demo',
+            featured:true
         },
         {   
             id:12,
-            path:'/public/anime/assets/anime-fashion.webp',
+            path:'/anime/assets/anime-fashion.webp',
             category:['Fashion','Lifestyle'],
             title:'Fashion trend now a days',
             date:'December 25, 2022',
-            user:'demo'
+            user:'demo',
+            featured:true
         },
 
     ]

@@ -9,6 +9,10 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { router } from './router'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+
+
+import 'swiper/swiper-bundle.css';
+
 library.add(fas);
 const app = createApp(App);
 app.component('font-awesome-icon', FontAwesomeIcon);
