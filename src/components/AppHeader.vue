@@ -21,10 +21,12 @@ export default {
           </div>
         </div>
         <div class="col-4">
-          <div class="d-flex justify-content-evenly gap-4 align-items-center">
-            <div class="d-flex gap-4">
-              <i class="fa-solid icone_back-after fa-chevron-left"></i>
-              <i class="fa-solid icone_back-after fa-chevron-right"></i>
+          <div class="d-flex justify-content-between  align-items-center">
+            <div class="col-7">
+              <div class="d-flex gap-4 justify-content-center">
+                <i class="fa-solid icone_back-after fa-chevron-left"></i>
+                <i class="fa-solid icone_back-after fa-chevron-right"></i>
+              </div>
             </div>
             <div class="d-flex align-items-center gap-3">
               <span class="container_social rounded-circle p-2"
@@ -52,14 +54,14 @@ export default {
     <router-link :to="{ name: 'contact' }">contact</router-link>
   </div> -->
   <section>
-    <div class="container header_width p-4">
+    <div class="container header_width p-4 pb-2">
       <div class="row align-items-center justify-content-between h-100">
-        <div class="col-3">
+        <div class="col-3 ps-0">
           <div class="container_logo">
             <img src="../assets/anime/assets/anime-logo.webp" alt="" />
           </div>
         </div>
-        <div class="col-auto me-4">
+        <div class="col-auto pe-0">
           <img
             src="../assets/anime/assets/header-banner.webp"
             class="rounded"
@@ -68,10 +70,10 @@ export default {
         </div>
       </div>
     </div>
-    <hr class="mt-2 mb-4">
+    <hr class="mt-2 mb-2">
   </section>
   <section>
-    <div class="container header_width my-3">
+    <div class="container header_width my-2">
       <div class="row align-items-center justify-content-between h-100">
         <div class="col-auto">
           <div class="d-flex align-items-center h-100"><i class="fa-solid fa-bars fs-2" ></i></div>
@@ -99,7 +101,7 @@ export default {
           </ul>
         </div>
         <div class="col-1">
-          <div class="d-flex justify-content-end align-items-center h-100"><i class="fa-solid fa-magnifying-glass fs-2"></i></div>
+          <div class="d-flex justify-content-end align-items-center h-100"><i class="fa-solid fa-magnifying-glass fs-2 ps-2"></i></div>
         </div>
       </div>
     </div>
