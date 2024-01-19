@@ -1,6 +1,18 @@
 <script>
+import HeaderCarousel from './HeaderCarousel.vue';
+
+
 export default {
-  name: 'AppHeader'
+  name: 'AppHeader',
+  components:{
+    HeaderCarousel
+  },
+  data(){
+    return{
+
+    }
+  },
+  
 }
 </script>
 
@@ -8,24 +20,23 @@ export default {
   <section class="bg_red_header">
     <div class="container header_width h-100">
       <div class="row justify-content-between h-100 align-items-center">
-        <div class="col-4 h-100">
+        <div class="col-6 h-100">
           <div class="d-flex h-100">
             <div class="h-100 bg_gray_news d-flex align-items-center">
-              <h6 class="p-4 text-light">NEWS UPDATES</h6>
-              <img
-                src="../assets/anime/assets/winter-150x150.webp"
-                class="img_container"
-                alt=""
-              />
+              <h6 class="p-2 text-light">NEWS UPDATES</h6>
+            </div>
+            <div class="col-7">
+              <HeaderCarousel />
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-5">
           <div class="d-flex justify-content-between  align-items-center">
             <div class="col-7">
+              
               <div class="d-flex gap-4 justify-content-center">
-                <i class="fa-solid icone_back-after fa-chevron-left"></i>
-                <i class="fa-solid icone_back-after fa-chevron-right"></i>
+                <i class="fa-solid icone_back-after fa-chevron-left" ></i>
+                <i class="fa-solid icone_back-after fa-chevron-right" ></i>
               </div>
             </div>
             <div class="d-flex align-items-center gap-3">
@@ -47,12 +58,7 @@ export default {
       </div>
     </div>
   </section>
-  <!--ROUTER VUE  -->
-  <!-- <div class="d-flex gap-2">
-    <router-link :to="{ name: 'home' }" class="">home</router-link>
-    <router-link :to="{ name: 'about' }">about</router-link>
-    <router-link :to="{ name: 'contact' }">contact</router-link>
-  </div> -->
+  
   <section>
     <div class="container header_width p-4 pb-2">
       <div class="row align-items-center justify-content-between h-100">
@@ -73,18 +79,18 @@ export default {
     <hr class="mt-2 mb-2">
   </section>
   <section>
-    <div class="container header_width my-2">
+    <div class="container header_width my-2 mb-2">
       <div class="row align-items-center justify-content-between h-100">
         <div class="col-auto">
           <div class="d-flex align-items-center h-100"><i class="fa-solid fa-bars fs-2" ></i></div>
         </div>
         <div class="col-auto">
           <ul class="d-flex  align-items-center h-100 justify-content-center gap-3">
-            <li><i class="fa-solid fa-house me-2"></i>
-              <router-link :to="{ name: 'home' }" class="fw-bold text-decoration-none" :class="{ 'active-link': $route.path === '/' }">HOME</router-link>
+            <li>
+              <router-link :to="{ name: 'home' }" class="fw-bold text-decoration-none d-flex justify-content-center align-items-center" :class="{ 'active-link': $route.path === '/' }"><i class="fa-solid fa-house me-2" ></i> HOME</router-link>
             </li>
-            <li><i class="fa-solid fa-user me-2"></i>
-              <router-link :to="{ name: 'about' }" class="fw-bold text-decoration-none" :class="{ 'active-link': $route.path === '/about' }">ABOUT US</router-link>
+            <li>
+              <router-link :to="{ name: 'about' }" class="fw-bold text-decoration-none d-flex justify-content-center align-items-center" :class="{ 'active-link': $route.path === '/about' }"><i class="fa-solid fa-user me-2" ></i> ABOUT US</router-link>
             </li>
             <li role="button"><i class="fa-solid fa-suitcase me-2"></i>
               <span class="fw-bold text-decoration-none">LIFESTYLE</span>
@@ -95,8 +101,8 @@ export default {
             <li role="button"><i class="fa-solid fa-suitcase me-2"></i>
               <span class="fw-bold text-decoration-none">PAGES</span>
             </li>
-            <li><i class="fa-solid fa-envelope me-2"></i>
-              <router-link :to="{ name: 'contact' }" class="fw-bold text-decoration-none" :class="{ 'active-link': $route.path === '/contact' }">CONTACT US</router-link>
+            <li>
+              <router-link :to="{ name: 'contact' }" class="fw-bold text-decoration-none d-flex justify-content-center align-items-center" :class="{ 'active-link': $route.path === '/contact' }"><i class="fa-solid fa-envelope me-2"></i>CONTACT US</router-link>
             </li>
           </ul>
         </div>
@@ -120,16 +126,7 @@ export default {
   .bg_gray_news {
     background-color: $subscribe_button;
   }
-  .img_container {
-    width: 40px;
-    height: 40px;
-    border: none;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
+
 }
 .icone_back-after {
   color: white;
@@ -166,13 +163,22 @@ hr{
   border-color: $border_grey_header;
 }
 ul{
-    li a{
+    li {
+      &:hover{
+        i{
+        color:$red_header_footer;
+      }
+      }
+
+      }
+      a{
       color: black;
       &:hover{
         color:$red_header_footer;
       }
     }
-}
+  }
+
 .col-3{
   i{
     margin-right: 40px;

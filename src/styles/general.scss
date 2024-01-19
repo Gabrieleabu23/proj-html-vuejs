@@ -1,30 +1,42 @@
+@use './partials/variables' as *;
 @import '@fontsource-variable/nunito-sans';
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Nunito Sans Variable', sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito Sans Variable', sans-serif;
 }
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
-.header_width{
-    width: 80%;
+.header_width {
+  width: 80%;
 }
 
-.container_height_100{
-    height: 100px;
+.container_height_100 {
+  height: 100px;
 }
-.container_logo{
-    height: 70px;
-    img{
-        height: 100%;
-    }
+.container_logo {
+  height: 70px;
+  img {
+    height: 100%;
+  }
 }
-.contact_us_about_container{
-    background-image: url("https://demo.hasnaindev.com/animetech/wp-content/uploads/2022/12/page-head-banner.webp");
-    background-position: center center;
+.contact_us_about_container {
+  background-image: url('https://demo.hasnaindev.com/animetech/wp-content/uploads/2022/12/page-head-banner.webp');
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
+}
+.button_send {
+  background-color: $red_header_footer;
+  font-size: 15px;
+  &:hover {
+    background-color: #333333;
+  }
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
 }

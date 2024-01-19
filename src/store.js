@@ -7,7 +7,8 @@ export const store= reactive({
             category:['Food'],
             title:'Hygenic receipe to prepare rice',
             date:'December 26, 2022',
-            user:'demo'
+            user:'demo',
+            time:'05:37'
         },
         {   
             id:2,
@@ -15,7 +16,8 @@ export const store= reactive({
             category:['Food'],
             title:'The best time to have a meal',
             date:'December 26, 2022',
-            user:'demo'
+            user:'demo',
+            time:'05:35'
         },
         {   
             id:3,
@@ -23,7 +25,8 @@ export const store= reactive({
             category:['Food'],
             title:'The best healthy foods',
             date:'December 26, 2022',
-            user:'demo'
+            user:'demo',
+            time:'05:32'
         },
         {   
             id:4,
@@ -32,7 +35,8 @@ export const store= reactive({
             title:'The best winter outfits',
             date:'December 26, 2022',
             user:'demo',
-            featured:true
+            featured:true,
+            time:'05:29'
         },
         {   
             id:5,

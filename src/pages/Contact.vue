@@ -162,14 +162,9 @@ export default {
   background-color: #333333;
   border-color: #333333;
 }
-.button_send{
-  background-color: $red_header_footer;
-  font-size: 15px;
-  &:hover{
-    background-color:#333333;
-  }
 
-}
+
+
 .overlay {
   background-color: rgba(51, 51, 51, 0.8);
   display: flex;

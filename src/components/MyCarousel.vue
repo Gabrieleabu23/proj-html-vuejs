@@ -66,7 +66,7 @@
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/grid'
-import 'swiper/css/pagination'
+
 import 'swiper/css/navigation' // Import navigation styles
 import 'bootstrap/dist/css/bootstrap.css' // Import Bootstrap CSS
 import { Navigation, Autoplay } from 'swiper/modules'
