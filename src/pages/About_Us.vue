@@ -7,6 +7,11 @@ export default{
 </script>
 
 <template>
+   <div class="contact_us_about_container">
+    <div class="overlay h-100">
+      <h4 class="text-light">ABOUT US</h4>
+    </div>
+   </div>
     <div class="container-fluid">
 
         <div class="container header_width p-4">
@@ -188,6 +193,14 @@ export default{
         
     } 
 }
+
+.overlay {
+  background-color: rgba(51, 51, 51, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
 
