@@ -22,7 +22,7 @@
         <swiper-slide
           v-for="(anime, index) in store.animeList"
           :key="index"
-          class="m-1"
+          
         >
           <div class="card border-0">
             <div class="img_container">
