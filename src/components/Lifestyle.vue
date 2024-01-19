@@ -145,10 +145,10 @@ export default {
 
 
     <div class="container-fluid bg-grey mt-5">
-        <div class="container header_width m-auto text-center">
+        <div class="container p-0 header_width m-auto text-center">
             <div class="col-auto my-4">
                 <img
-                  src="../assets/anime/assets/header-banner.webp"
+                  src="../assets/anime/assets/page-banner-1.webp"
                   class="rounded w-100"
                   alt=""
                 />

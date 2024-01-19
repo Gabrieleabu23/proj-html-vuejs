@@ -1,15 +1,19 @@
 <template>
   <div>
-    <div class="mySwiper">
+
+    <div class="container header_width p-0">
+      <h3>FEATURED POSTS</h3>
+    </div>
+    <div class="mySwiper container header_width pt-4 px-0">
       <swiper
-        slidesPerView="4"
+        slidesPerView="3"
         :loop="true"
-        :speed="1500"
+        :speed="1800"
         :autoplay="{
-      delay: 2500,
-      disableOnInteraction: false,
-      pauseOnMouseEnter:true
-    }"
+          delay: 2500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true
+        }"
         :spaceBetween="10"
         :navigation="{
           nextEl: '.swiper-button-next',
@@ -17,12 +21,15 @@
         }"
         :modules="modules"
         ref="mySwiper"
-        class="swiper-container position-relative"
+        class="position-relative"
       >
         <swiper-slide
-          v-for="(anime, index) in store.animeList"
+          v-for="(anime, index) in store.animeList.filter(
+            anime => anime.featured
+          )"
           :key="index"
-          class="m-1"
+          class=""
+          
         >
           <div class="card border-0">
             <div class="img_container">
@@ -30,7 +37,7 @@
               <div class="card-img-overlay text-center">
                 <div>
                   <button
-                    v-for="(el, index) in store.animeList[index].category"
+                    v-for="(el, index) in anime.category"
                     :key="index"
                     type="button"
                     class="btn mx-2"
@@ -40,11 +47,21 @@
                 </div>
               </div>
             </div>
-            <div class="card-body text-center">
+            <div class="card-body text-center rounded">
               <h5 class="card-title fw-bold">
                 <a href="" class="text-decoration-none">{{ anime.title }}</a>
               </h5>
               <p class="card-text">{{ anime.date }}</p>
+              <span class="fs-6"
+                >Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed
+                maximus orci ac condi mentum…</span
+              >
+              <button
+                class="btn2 button_send text-light px-4 py-2 my-2 rounded-pill"
+                type="submit"
+              >
+                <span class="px-3">READ MORE</span>
+              </button>
             </div>
           </div>
         </swiper-slide>
@@ -74,7 +91,7 @@ import { Navigation, Autoplay } from 'swiper/modules'
 import { store } from '../store'
 
 export default {
-  name: 'MyCarousel',
+  name: 'FeaturedCarousel',
   components: {
     Swiper,
     SwiperSlide
@@ -101,12 +118,16 @@ export default {
     background-color: white;
   }
 }
+.btn2:first-child:active {
+  background-color: #333333;
+  border-color: none;
+}
 .btn:first-child:active {
   color: $red_header_footer;
   background-color: white;
   border-color: white;
 }
-.card-img-overlay{
+.card-img-overlay {
   height: fit-content;
 }
 .img_container {
@@ -119,16 +140,17 @@ export default {
   }
 }
 
-.card-body{
+.card-body {
+  background-color: $carousel_bg_grey;
   cursor: pointer;
-  a{
+  a {
     color: black;
-    &:hover{
+    &:hover {
       color: red;
     }
   }
-  p{
-    &:hover{
+  p {
+    &:hover {
       color: red;
     }
   }
@@ -139,8 +161,6 @@ export default {
 }
 
 .mySwiper {
-  padding: 30px;
-  background-color: $carousel_bg_grey;
   position: relative;
 }
 
@@ -151,11 +171,11 @@ export default {
 .custom-next,
 .custom-prev {
   position: absolute;
-  top: 45%;
+  top: 0%;
   width: 35px; /* Set the desired width */
   height: 35px; /* Set the desired height */
-  background-color: white;
-  color: $red_header_footer;
+  background-color: $black_footer_hr_triangle;
+  color: white;
   cursor: pointer;
   z-index: 10;
   display: flex;
@@ -169,11 +189,11 @@ export default {
 }
 
 .custom-next {
-  right: 50px; /* Adjust the distance from the right as needed */
+  left: 97%;
 }
 
 .custom-prev {
-  left: 50px; /* Adjust the distance from the left as needed */
+  left: 92%;
 }
 
 .swiper-button-next::after,

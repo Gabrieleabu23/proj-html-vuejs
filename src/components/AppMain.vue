@@ -1,6 +1,7 @@
 <script >
 import MyCarousel from './MyCarousel.vue';
 import UnderMainCarousel from './UnderMainCarousel.vue';
+import FeaturedCarousel from './FeaturedCarousel.vue';
 import CardBottom from './CardBottom.vue';
 import Lifestyle from './Lifestyle.vue'
 export default {
@@ -8,6 +9,7 @@ export default {
     components:{
         MyCarousel,
         UnderMainCarousel,
+        FeaturedCarousel,
         CardBottom,
         Lifestyle,
     }
@@ -19,7 +21,7 @@ export default {
     <UnderMainCarousel/>
 
     <Lifestyle/>
-
+    <FeaturedCarousel/>
     <CardBottom/>
 
 

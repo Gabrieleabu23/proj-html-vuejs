@@ -54,7 +54,10 @@ export default {
           :key="index"
           class="swiper-slide d-flex justify-content-start align-items-center h-100"
         >
-          <img :src="anime.img" class="img_container" alt="" />
+            <div class="img_container position-relative">
+                <div class="triangolo position-absolute"></div>
+                <img :src="anime.img" class="h-100 w-100" alt="" />
+            </div>
           <span class="ps-2 text-light">{{ anime.time }}</span>
           <h6 class=" text-light text-uppercase ps-2">{{ anime.title }}</h6>
         </swiper-slide>
@@ -65,6 +68,17 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/general.scss' as *;
 @use '../styles/partials/variables' as *;
+
+.triangolo {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid $red_header_footer;
+  top: 35%;
+  transform: rotate(-90deg);
+  left: -12%;
+}
+
+
 h6{
     font-size: 14px;
 }

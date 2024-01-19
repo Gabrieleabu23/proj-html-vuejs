@@ -132,19 +132,6 @@ export default {
     }
 }
 
-.box-triangle{
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-.triangolo {
-    width: 0px;
-    height: 0px;
-    border-left: 15px solid transparent; 
-    border-right: 15px solid transparent; 
-    border-top: 15px solid $black_footer_hr_triangle; 
-}
 
 
 </style>
