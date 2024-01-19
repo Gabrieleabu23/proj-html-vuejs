@@ -12,11 +12,11 @@ export default {
 </script>
 
 <template>
-    <div class="container header_width ">
-            <div class="row mb-5">
+    <div class="container header_width my-5  ">
+            <div class="row mb-5 gap-sm-2 gap-2 gap-md-0">
                 <div class="col-lg-3 col-md-12">
-                    <div class="row height-400" >
-                        <div class="col-lg-12 col-md-6  height-calc-up">
+                    <div class="row h-100 gap-lg-2 gap-sm-2 gap-2 gap-md-0" >
+                        <div class="col-lg-12 col-md-6 col-sm-12  px-md-1">
                             <div class="card  shadow h-100 text-bg-dark">
                                 <img :src="store.animeList[11].path" class="card-img h-100" alt="...">
                                 <div class="card-img-overlay text-center">
@@ -39,7 +39,7 @@ export default {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 col-md-6">
+                        <div class="col-lg-12 col-md-6  col-sm-12 px-md-1">
                             <div class="card text-bg-dark h-100">
                                 <img :src="store.animeList[7].path" class="card-img h-100" alt="...">
                                 <div class="card-img-overlay text-center">
@@ -62,8 +62,8 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 px-0">
-                    <div class="card height-400" style="overflow: hidden;">
+                <div class="col-lg-6 col-md-12 px-lg-0 px-md-1 pt-md-2 pt-lg-0 ">
+                    <div class="card " style="overflow: hidden;">
                         <img :src="store.animeList[9].path" class="w-100 h-100" alt="Best Places">
                         <div class="card-img-overlay text-center text-white">
                             <div>
@@ -85,9 +85,9 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-12">
-                    <div class="row height-400">
-                        <div class="col-lg-12 col-md-6 height-calc-up">
+                <div class="col-lg-3 col-md-12 pt-md-2 pt-lg-0">
+                    <div class="row h-100 gap-lg-2 gap-sm-2 gap-2 gap-md-0">
+                        <div class="col-lg-12 col-md-6   px-md-1 ">
                             <div class="card h-100 text-bg-dark">
                                 <img :src="store.animeList[10].path" class="card-img h-100 " alt="...">
                                 <div class="card-img-overlay text-center">
@@ -109,7 +109,7 @@ export default {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 col-md-6  height-calc-down">
+                        <div class="col-lg-12 col-md-6   px-md-1">
                             <div class="card h-100 text-bg-dark">
                                 <img :src="store.animeList[6].path" class="card-img h-100" alt="...">
                                 <div class="card-img-overlay text-center">
@@ -145,18 +145,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 
-.height-400{
-    height: 400px;
-}
 
-.height-calc-up{
-    height: calc(50% - 5px);
-    margin-bottom: 5px;
-}
-.height-calc-down{
-    height: calc(50% - 5px);
-    margin-top: 5px;
-}
 
 .card{
     border: none;

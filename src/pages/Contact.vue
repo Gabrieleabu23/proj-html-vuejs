@@ -16,8 +16,8 @@ export default {
     </div>
   </div>
   <div class="container header_width">
-    <div class="row my-4">
-      <div class="col-4">
+    <div class="row my-4 gap-md-2 gap-lg-0 gap-2">
+      <div class="col-lg-4 col-md-12">
         <div
           class="card justify-content-center align-items-center h-100 card_bg border-0"
         >
@@ -32,7 +32,7 @@ export default {
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4 col-md-12">
         <div
           class="card justify-content-center align-items-center h-100 card_bg border-0"
         >
@@ -47,7 +47,7 @@ export default {
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-lg-4 col-md-12">
         <div
           class="card justify-content-center align-items-center h-100 card_bg border-0"
         >
@@ -63,8 +63,8 @@ export default {
         </div>
       </div>
     </div>
-    <div class="row pt-4 mt-4 pb-4 mb-4">
-      <div class="col-7 pt-4">
+    <div class="row pt-4 mt-4 pb-4 mb-4 gap-md-2 gap-lg-0 gap-2">
+      <div class="col-lg-7 col-md-12 pt-4 ">
         <h2>GET IN TOUCH</h2>
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
         <div class="col-12 pt-4">
@@ -115,7 +115,7 @@ export default {
           </div>
         </div>
       </div>
-      <div class="col-5">
+      <div class="col-lg-5 col-md-12">
         <img
           src="https://demo.hasnaindev.com/animetech/wp-content/uploads/2022/12/anime-contact.webp"
           alt=""
@@ -187,4 +187,5 @@ export default {
   background-color: $red_header_footer;
   font-size: 32px;
 }
+
 </style>

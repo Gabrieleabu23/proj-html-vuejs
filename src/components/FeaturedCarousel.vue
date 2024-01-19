@@ -52,7 +52,7 @@
                 <a href="" class="text-decoration-none">{{ anime.title }}</a>
               </h5>
               <p class="card-text">{{ anime.date }}</p>
-              <span class="fs-6"
+              <span class="fs-6 d-block"
                 >Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed
                 maximus orci ac condi mentum…</span
               >

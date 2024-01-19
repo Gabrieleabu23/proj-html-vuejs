@@ -64,7 +64,7 @@ export default {
       <div class="row align-items-center justify-content-between h-100">
         <div class="col-3 ps-0">
           <div class="container_logo">
-            <img src="../assets/anime/assets/anime-logo.webp" alt="" />
+            <a href=""><img src="../assets/anime/assets/anime-logo.webp" alt="" /></a>
           </div>
         </div>
         <div class="col-auto pe-0">
