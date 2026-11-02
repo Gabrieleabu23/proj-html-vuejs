@@ -27,7 +27,3 @@ Collaborative mid-term project by:
 - Giacomo Agave
 - Adjol Mitrushi
 
-Individual contributions have not been specified.
-
-## Screenshots
-Add verified screenshots of the pages here.
